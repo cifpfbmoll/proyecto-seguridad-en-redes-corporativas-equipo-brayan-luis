@@ -33,7 +33,7 @@ Se realizó una auditoría final, comparando los resultados con la auditoría in
 
 ### Conclusiones
 
-- **Mejoras en Seguridad**: Se evidencian mejoras significativas tras aplicar las configuraciones.
+- **Mejoras en Seguridad**: Se ven mejoras significativas tras aplicar las configuraciones.
 - **Áreas de Mejora**: Se identificaron aspectos que necesitan atención en futuras revisiones.
 
 ## Referencias
