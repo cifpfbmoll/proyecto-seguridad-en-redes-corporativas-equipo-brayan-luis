@@ -5,7 +5,7 @@
 ### Alumnos:
 - Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
-- 
+
 ## Introducción
 
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 24.04 LTS en VirtualBox, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
