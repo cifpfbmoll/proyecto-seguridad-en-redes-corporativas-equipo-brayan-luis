@@ -3,6 +3,6 @@
 # Sprint 1 - Hardening de Ubuntu
 
 ### Alumnos:
-- 
+- Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
 ## 
