@@ -24,4 +24,4 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 #### Conclusión Sprint 1
 Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidades y asegurar el correcto funcionamiento de la infraestructura. Gracias a la auditorio se ven la mejoras en la seguridad del servidor.
 
-## Sprint 2 - Cópias de seguridad
+## Sprint 2 - Copias de seguridad
