@@ -20,7 +20,7 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 4. **Configuración de Usuarios**: Creación de un usuario administrador y añadirlo al grupo `sudoers`.
 5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones
 6. Realizar la auditoría Final y comprobar los resultados.
-7. 
+
 #### Conclusiones
 
 - **Mejoras en Seguridad**: Se ven mejoras significativas tras aplicar las configuraciones.
