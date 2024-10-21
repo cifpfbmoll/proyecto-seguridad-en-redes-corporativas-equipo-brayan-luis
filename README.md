@@ -24,7 +24,7 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
    - Establecimiento de contraseña de arranque.
    - Ajustes de permisos en el fichero de configuración de arranque.
    - Requerir contraseña en modo “single user”.
-4. **Configuración de Usuarios**: Creación de un usuario administrador (ej. `rgion`) y adición al grupo `sudoers`.
+4. **Configuración de Usuarios**: Creación de un usuario administrador.
 5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones.
 
 ## Auditoría Final
