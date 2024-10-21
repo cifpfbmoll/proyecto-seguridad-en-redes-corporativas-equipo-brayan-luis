@@ -25,3 +25,4 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 
 - **Mejoras en Seguridad**: Se ven mejoras significativas tras aplicar las configuraciones.
 - **Áreas de Mejora**: Se identificaron aspectos que necesitan atención en futuras revisiones.
+- 
