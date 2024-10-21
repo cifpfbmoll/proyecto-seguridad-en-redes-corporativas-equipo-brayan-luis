@@ -8,32 +8,20 @@
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
 
-## Actividades Previas
+### Configuraciones Aplicadas - Sprint 1
 
-1. **Leer el Artículo**: Comprensión de las medidas de seguridad en sistemas Ubuntu.
-2. **Primera Auditoría**: Se realizó una auditoría con las medidas de seguridad `cis_level2_server` y se comentaran los resultados.
-
-## Configuraciones Aplicadas
-
-1. **Deshabilitar Cortafuegos**: Se deshabilitó el cortafuegos mediante el fichero `tailor.xml`.
-2. **Aplicación de Reglas `cis_level2_server`**: Se implementaron las configuraciones recomendadas.
+1. **Deshabilitar Cortafuegos**: Poner en "false" en cortafuegos "ufw" mediante el fichero `tailor.xml`.
+2. **Aplicación de Reglas `cis_level2_server`**
 3. **Configuraciones de Seguridad**:
-   - Seguridad global y del gestor de arranque GRUB.
+   - Configuración del arranque GRUB.
    - Establecimiento de contraseña de arranque.
-   - Ajustes de permisos en el fichero de configuración de arranque.
+   - Establecer permisos fichero de configuración de arranque.
    - Requerir contraseña en modo “single user”.
-4. **Configuración de Usuarios**: Creación de un usuario administrador (ej. `rgion`) y adición al grupo `sudoers`.
+4. **Configuración de Usuarios**: Creación de un usuario administrador y añadirlo al grupo `sudoers`.
 5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones
-## Auditoría Final
-
-Se realizó una auditoría final, comparando los resultados con la auditoría inicial.
-
-### Conclusiones
+6. Realizar la auditoría Final y comprobar los resultados.
+7. 
+#### Conclusiones
 
 - **Mejoras en Seguridad**: Se ven mejoras significativas tras aplicar las configuraciones.
 - **Áreas de Mejora**: Se identificaron aspectos que necesitan atención en futuras revisiones.
-
-## Referencias
-
-- [Guía de CIS Level 2 Server](https://www.cisecurity.org/benchmark/ubuntu/)
-- [Videotutorial sobre Seguridad en Ubuntu](https://www.example.com)
