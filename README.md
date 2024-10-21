@@ -1,19 +1,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/A04QAW6X)
 
-# Sprint 1 - Hardening de Ubuntu
-
+# Seguridad en redes corporativas
 ### Alumnos:
 - Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
-
-## Introducción
-
-Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 24.04 LTS en VirtualBox, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
+  
+## Sprint 1 - Hardening de Ubuntu
+Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
 
 ## Actividades Previas
 
-1. **Lectura del Artículo**: Comprensión de las medidas de seguridad en sistemas Ubuntu.
-2. **Auditoría Inicial**: Se realizó una auditoría con las medidas de seguridad `cis_level2_server` y se documentaron los resultados.
+1. **Leer el Artículo**: Comprensión de las medidas de seguridad en sistemas Ubuntu.
+2. **Primera Auditoría**: Se realizó una auditoría con las medidas de seguridad `cis_level2_server` y se comentaran los resultados.
 
 ## Configuraciones Aplicadas
 
@@ -24,9 +22,8 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
    - Establecimiento de contraseña de arranque.
    - Ajustes de permisos en el fichero de configuración de arranque.
    - Requerir contraseña en modo “single user”.
-4. **Configuración de Usuarios**: Creación de un usuario administrador.
-5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones.
-
+4. **Configuración de Usuarios**: Creación de un usuario administrador (ej. `rgion`) y adición al grupo `sudoers`.
+5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones
 ## Auditoría Final
 
 Se realizó una auditoría final, comparando los resultados con la auditoría inicial.
