@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/A04QAW6X)
 
 # Seguridad en redes corporativas
-### Alumnos:
+### Equipo:
 - Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
   
@@ -24,4 +24,5 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 #### Conclusion
 Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidades y asegurar el correcto funcionamiento de la infraestructura. Gracias a la auditorio se ven la mejoras en la seguridad del servidor.
 
-## Sprint 2 Copias de seguridad
+
+## Sprint 2 - Copias de seguridad
