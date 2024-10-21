@@ -22,7 +22,5 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 6. Realizar la auditoría Final y comprobar los resultados.
 
 #### Conclusiones
+Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidades y asegurar el correcto funcionamiento de la infraestructura. Gracias a la auditorio se ven la mejoras en la seguridad del servidor.
 
-- **Mejoras en Seguridad**: Se ven mejoras significativas tras aplicar las configuraciones.
-- **Áreas de Mejora**: Se identificaron aspectos que necesitan atención en futuras revisiones.
-- 
