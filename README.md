@@ -21,6 +21,6 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 5. **Actualizaciones de Software**: Verificación del cumplimiento de las recomendaciones de actualizaciones
 6. Realizar la auditoría Final y comprobar los resultados.
 
-#### Conclusiones
+#### Conclusion
 Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidades y asegurar el correcto funcionamiento de la infraestructura. Gracias a la auditorio se ven la mejoras en la seguridad del servidor.
 
