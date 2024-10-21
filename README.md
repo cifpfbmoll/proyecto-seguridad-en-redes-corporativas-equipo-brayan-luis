@@ -5,7 +5,6 @@
 ### Alumnos:
 - Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
-- 
 
 ## Introducción
 
