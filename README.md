@@ -45,8 +45,6 @@ Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidad
 - Es imprescindible comprobar la recuperación de los datos. 
 - Se solicita realizar una batería de pruebas para verificar que el programa funciona correctamente.
 
----
-
 ### Copia 2: “Copia Imágenes”
 
 **Características:**
