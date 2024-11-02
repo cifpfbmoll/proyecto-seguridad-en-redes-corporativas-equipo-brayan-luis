@@ -25,3 +25,37 @@ Este documento resume las configuraciones realizadas para asegurar un servidor U
 Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidades y asegurar el correcto funcionamiento de la infraestructura. Gracias a la auditorio se ven la mejoras en la seguridad del servidor.
 
 ## Sprint 2 - Copias de seguridad
+
+### Equipo:
+- Luis Fernando Zúñiga Vigil
+- Brayan Via Orellana
+
+## Solicitud de Copias de Seguridad
+
+### Copia 1: “Copia Documentos”
+
+**Características:**
+- **Origen**: Carpeta **Documentos** del servidor.
+- **Destino**: Cuenta de **Google Drive**.
+- **Cifrado**: **Copia cifrada**.
+- **RPO (Recovery Point Objective)**: Se acepta una pérdida de datos de máximo **1 hora**.
+- **Frecuencia de generación**: Lunes a viernes.
+
+**Consideraciones Adicionales:**
+- Es imprescindible comprobar la recuperación de los datos. 
+- Se solicita realizar una batería de pruebas para verificar que el programa funciona correctamente.
+
+---
+
+### Copia 2: “Copia Imágenes”
+
+**Características:**
+- **Origen**: Carpeta **Imágenes** del servidor.
+- **Destino**: Cuenta de **Google Drive**.
+- **Cifrado**: **Copia sin cifrar**.
+- **RPO (Recovery Point Objective)**: Se acepta una pérdida de datos de máximo **1 día**.
+- **Frecuencia de generación**: Lunes a domingo.
+
+**Consideraciones Adicionales:**
+- Es imprescindible comprobar la recuperación de los datos. 
+- Se solicita realizar una batería de pruebas para verificar que el programa funciona correctamente.
