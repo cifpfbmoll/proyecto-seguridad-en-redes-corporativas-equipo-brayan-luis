@@ -28,7 +28,7 @@ Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidad
 
 ### Respaldo de Seguridad
 
-Este plan incluye dos procesos de copias de seguridad automatizadas hacia Google Drive para proteger los datos de las carpetas **Documentos** e **Imágenes** en el servidor.
+Realizar dos procesos de copias de seguridad automatizadas hacia Google Drive para proteger los datos de las carpetas **Documentos** e **Imágenes** en el servidor.
 
 ### Copia Documentos
 - **Origen**: Carpeta `Documentos` del servidor
