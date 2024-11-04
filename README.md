@@ -26,33 +26,25 @@ Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidad
 
 ## Sprint 2 - Copias de seguridad
 
-### Equipo:
-- Luis Fernando Zúñiga Vigil
-- Brayan Via Orellana
+## Sprint 2 - Copias de seguridad
 
-## Solicitud de Copias de Seguridad
+# Respaldo de Seguridad
 
-### Copia 1: “Copia Documentos”
+Este plan incluye dos procesos de copias de seguridad automatizadas hacia Google Drive para proteger los datos de las carpetas **Documentos** e **Imágenes** en el servidor.
 
-**Características:**
-- **Origen**: Carpeta **Documentos** del servidor.
-- **Destino**: Cuenta de **Google Drive**.
-- **Cifrado**: **Copia cifrada**.
-- **RPO (Recovery Point Objective)**: Se acepta una pérdida de datos de máximo **1 hora**.
-- **Frecuencia de generación**: Lunes a viernes.
+### Copia Documentos
+- **Origen**: Carpeta `Documentos` del servidor
+- **Destino**: Google Drive
+- **Cifrado**: Sí
+- **RPO (Recovery Point Objective)**: Máximo 1 hora de pérdida de datos permitida
+- **Frecuencia**: Lunes a viernes
 
-**Consideraciones Adicionales:**
-- Es imprescindible comprobar la recuperación de los datos. 
-- Se solicita realizar una batería de pruebas para verificar que el programa funciona correctamente.
-
-### Copia 2: “Copia Imágenes”
-
-**Características:**
-- **Origen**: Carpeta **Imágenes** del servidor.
-- **Destino**: Cuenta de **Google Drive**.
-- **Cifrado**: **Copia sin cifrar**.
-- **RPO (Recovery Point Objective)**: Se acepta una pérdida de datos de máximo **1 día**.
-- **Frecuencia de generación**: Lunes a domingo.
+### Copia Imágenes
+- **Origen**: Carpeta `Imágenes` del servidor
+- **Destino**: Google Drive
+- **Cifrado**: No
+- **RPO (Recovery Point Objective)**: Máximo 1 día de pérdida de datos permitida
+- **Frecuencia**: Lunes a domingo
 
 **Consideraciones Adicionales:**
 - Es imprescindible comprobar la recuperación de los datos. 
