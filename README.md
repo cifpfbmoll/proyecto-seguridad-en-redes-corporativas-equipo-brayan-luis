@@ -26,7 +26,7 @@ Estas configuraciones mejoran la seguridad del sistema, minimizar vulnerabilidad
 
 ## Sprint 2 - Copias de seguridad
 
-# Respaldo de Seguridad
+### Respaldo de Seguridad
 
 Este plan incluye dos procesos de copias de seguridad automatizadas hacia Google Drive para proteger los datos de las carpetas **Documentos** e **Imágenes** en el servidor.
 
