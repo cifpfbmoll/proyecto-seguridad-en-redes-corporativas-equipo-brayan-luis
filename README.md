@@ -45,5 +45,5 @@ Realizar dos procesos de copias de seguridad automatizadas hacia Google Drive pa
 - **Frecuencia**: Lunes a domingo
 
 **Consideraciones Adicionales:**
-- Es imprescindible comprobar la recuperación de los datos. 
-- Se solicita realizar una batería de pruebas para verificar que el programa funciona correctamente.
+- Comprobar la recuperación de los datos. 
+- Realizar una batería de pruebas para verificar que el programa funciona correctamente.
