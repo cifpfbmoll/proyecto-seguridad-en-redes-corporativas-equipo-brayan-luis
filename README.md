@@ -49,37 +49,32 @@ Realizar dos procesos de copias de seguridad automatizadas hacia Google Drive pa
 - Realizar una batería de pruebas para verificar que el programa funciona correctamente.
 
 ## Sprint 3 - Hardening Apache
-
-En este sprint, se trabajará en la configuración de seguridad del servidor Apache ya instalado, con el objetivo de hacerlo más seguro. Las tareas se basan en la guía de hardening básica de Apache ofrecida por el INCIBE.
-
-## Objetivo
 Fortalecer la configuración del servidor Apache mediante prácticas de hardening para minimizar vulnerabilidades y mejorar su seguridad.
 
-## Tareas a Realizar
-A continuación, se enumeran las configuraciones y actividades necesarias:
-
-- **Instalación de Apache:** 
-- **Configuraciones Globales:** Aplicar configuraciones generales recomendadas por la guía de hardening.
-- **Ficheros de Configuración:** Revisar y ajustar configuraciones clave en los archivos principales.
-- **Configuración de Usuarios y Grupos:** Limitar privilegios a usuarios y grupos específicos.
-- **Ocultación de Versiones:** Configurar Apache para que no exponga la versión del servidor.
-- **Exposición Mínima de Módulos:** Deshabilitar módulos innecesarios para reducir la superficie de ataque.
-- **Creación de VirtualHost:** Crear un VirtualHost con tu nombre y apellido.
-- **Directiva `Options`:** Implementar configuraciones múltiples y de contexto.
+### Tareas a Realizar
+- **Instalación de Apache** 
+- **Configuraciones Globales:**
+  - **Ficheros de Configuración:** Revisar y ajustar configuraciones clave en los archivos principales.
+  - **Configuración de Usuarios y Grupos:** Limitar privilegios a usuarios y grupos específicos.
+  - **Ocultación de Versiones:** Configurar Apache para que no exponga la versión del servidor.
+  - **Exposición Mínima de Módulos:** Deshabilitar módulos innecesarios para reducir la superficie de ataque.
+  - **Creación de VirtualHost:** Crear un VirtualHost con tu nombre y apellido.
+    - **Directiva `Options`:** Implementar configuraciones múltiples y de contexto.
 - **Archivos `.htaccess`:** Comprender su propósito y configurarlos adecuadamente.
 - **Evitar el Hotlinking:** Configurar reglas para prevenir el uso indebido de recursos multimedia.
 - **Configuración HTTPS:**
-    - Generar certificados con OpenSSL.
-    - Configurar el VirtualHost para que todos los accesos sean por HTTPS.
+  - Generar certificados con OpenSSL.
+  - Configurar el VirtualHost para que todos los accesos sean por HTTPS.
 - **Módulo `mod_security`:**
-    - Investigar y activar `mod_security`.
-    - Descargar e implementar las reglas OWASP recomendadas.
-    - Configurar reglas para detectar SQL Injection.
+    - Investigar sobre `mod_security`.
+
 - **Pruebas de Seguridad:**
-    - Descargar Kali Linux y ejecutar un ataque DoS con Metasploit (Slowloris) para comprobar la vulnerabilidad inicial.
-    - Activar `mod_security` y repetir el ataque para confirmar que el servidor sigue accesible tras la protección.
+  - Descargar Kali Linux y ejecutar un ataque DoS con Metasploit (Slowloris) en nuestro servidor web.
+  - Clonar e implementar las reglas OWASP recomendadas.
+  - Configurar reglas para detectar SQL Injection.
+  - Instalar y activar `mod_security` para repetir el ataque y confirmar que el servidor sigue accesible.
 
 
-## Resultado Esperado
-Un servidor Apache más seguro, resistente a ataques comunes como DoS y SQL Injection, con configuraciones optimizadas para minimizar vulnerabilidades.
+### Conclusión
+En este sprint, se mejoró la seguridad del servidor Apache configurando opciones clave como la ocultación de versiones, desactivación de módulos innecesarios y la implementación de HTTPS. Se habilitó el módulo mod_security con reglas OWASP para proteger contra ataques comunes y se realizaron pruebas de seguridad, como un ataque DoS (Slowloris). 
 
