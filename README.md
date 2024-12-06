@@ -4,7 +4,11 @@
 ### Equipo:
 - Luis Fernando Zúñiga Vigil
 - Brayan Via Orellana
-  
+## Índice
+1. [Sprint 1 - Hardening de Ubuntu](#sprint-1---hardening-de-ubuntu)
+2. [Sprint 2 - Copias de seguridad](#sprint-2---copias-de-seguridad)
+3. [Sprint 3 - Hardening Apache](#sprint-3---hardening-apache)
+---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
 
