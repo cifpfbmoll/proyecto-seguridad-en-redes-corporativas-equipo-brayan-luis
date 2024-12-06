@@ -58,31 +58,27 @@ Fortalecer la configuración del servidor Apache mediante prácticas de hardenin
 ## Tareas a Realizar
 A continuación, se enumeran las configuraciones y actividades necesarias:
 
-1. **Instalación de Apache:** Verificar que Apache esté instalado correctamente en el servidor.
-2. **Configuraciones Globales:** Aplicar configuraciones generales recomendadas por la guía de hardening.
-3. **Ficheros de Configuración:** Revisar y ajustar configuraciones clave en los archivos principales.
-4. **Configuración de Usuarios y Grupos:** Limitar privilegios a usuarios y grupos específicos.
-5. **Ocultación de Versiones:** Configurar Apache para que no exponga la versión del servidor.
-6. **Exposición Mínima de Módulos:** Deshabilitar módulos innecesarios para reducir la superficie de ataque.
-7. **Creación de VirtualHost:** Crear un VirtualHost con tu nombre y apellido.
-8. **Directiva `Options`:** Implementar configuraciones múltiples y de contexto.
-9. **Archivos `.htaccess`:** Comprender su propósito y configurarlos adecuadamente.
-10. **Evitar el Hotlinking:** Configurar reglas para prevenir el uso indebido de recursos multimedia.
-11. **Configuración HTTPS:**
+- **Instalación de Apache:** 
+- **Configuraciones Globales:** Aplicar configuraciones generales recomendadas por la guía de hardening.
+- **Ficheros de Configuración:** Revisar y ajustar configuraciones clave en los archivos principales.
+- **Configuración de Usuarios y Grupos:** Limitar privilegios a usuarios y grupos específicos.
+- **Ocultación de Versiones:** Configurar Apache para que no exponga la versión del servidor.
+- **Exposición Mínima de Módulos:** Deshabilitar módulos innecesarios para reducir la superficie de ataque.
+- **Creación de VirtualHost:** Crear un VirtualHost con tu nombre y apellido.
+- **Directiva `Options`:** Implementar configuraciones múltiples y de contexto.
+- **Archivos `.htaccess`:** Comprender su propósito y configurarlos adecuadamente.
+- **Evitar el Hotlinking:** Configurar reglas para prevenir el uso indebido de recursos multimedia.
+- **Configuración HTTPS:**
     - Generar certificados con OpenSSL.
     - Configurar el VirtualHost para que todos los accesos sean por HTTPS.
-12. **Módulo `mod_security`:**
+- **Módulo `mod_security`:**
     - Investigar y activar `mod_security`.
     - Descargar e implementar las reglas OWASP recomendadas.
     - Configurar reglas para detectar SQL Injection.
-13. **Pruebas de Seguridad:**
+- **Pruebas de Seguridad:**
     - Descargar Kali Linux y ejecutar un ataque DoS con Metasploit (Slowloris) para comprobar la vulnerabilidad inicial.
     - Activar `mod_security` y repetir el ataque para confirmar que el servidor sigue accesible tras la protección.
 
-## Consideraciones
-- **Documentación:** Tomar notas y registrar las configuraciones aplicadas para referencia futura.
-- **Pruebas:** Asegurarse de realizar pruebas exhaustivas después de cada configuración para verificar su efectividad.
-- **Guía de Referencia:** Utilizar como base la guía de hardening del INCIBE.
 
 ## Resultado Esperado
 Un servidor Apache más seguro, resistente a ataques comunes como DoS y SQL Injection, con configuraciones optimizadas para minimizar vulnerabilidades.
