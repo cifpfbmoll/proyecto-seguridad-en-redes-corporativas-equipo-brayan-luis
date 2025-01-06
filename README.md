@@ -8,6 +8,7 @@
 1. [Sprint 1 - Hardening de Ubuntu](#sprint-1---hardening-de-ubuntu)
 2. [Sprint 2 - Copias de seguridad](#sprint-2---copias-de-seguridad)
 3. [Sprint 3 - Hardening Apache](#sprint-3---hardening-apache)
+4. [Sprint 4 -Hardening SSH](#sprint-4---hardening-ssh)
 ---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
@@ -81,4 +82,32 @@ Fortalecer la configuración del servidor Apache mediante prácticas de hardenin
 
 ### Conclusión
 En este sprint, se mejoró la seguridad del servidor Apache configurando opciones clave como la ocultación de versiones, desactivación de módulos innecesarios y la implementación de HTTPS. Se habilitó el módulo mod_security con reglas OWASP para proteger contra ataques comunes y se realizaron pruebas de seguridad, como un ataque DoS (Slowloris). 
+
+## Sprint 4 - Hardening SSH
+Asegurar el servidor SSH mediante configuraciones de hardening.
+
+### Tareas a realizar:
+
+1. **Instalación del servidor SSH**:
+2. **Configuraciones de Hardening**:
+   - **Autenticación por clave pública**: Deshabilitar autenticación por contraseña.
+   - **Cambio de puerto**: Cambiar el puerto SSH de 22 a uno no estándar.
+   - **Limitar IPs**: Restringir el acceso por IP (puede deshabilitarse después).
+   - **Deshabilitar ROOT**: Evitar acceso SSH con el usuario ROOT.
+   - **Limitar usuarios**: Restringir el acceso SSH a usuarios específicos.
+   - **Deshabilitar contraseñas**: Deshabilitar inicio de sesión por contraseña.
+   - **Contraseñas vacías**: Deshabilitar contraseñas vacías.
+   - **Limitar intentos fallidos**: Configurar límite de intentos fallidos de login.
+   - **Limitar conexiones simultáneas**: Restringir conexiones SSH no autenticadas.
+   - **Banner de advertencia**: Configurar un banner para los usuarios SSH.
+   - **Timeout de sesión inactiva**: Configurar cierre de sesión después de inactividad.
+   - **Deshabilitar X11 forwarding**: Deshabilitar esta opción.
+   - **Chroot (Bloquear usuarios)**: Limitar a los usuarios a sus directorios de inicio.
+
+3. **Doble Factor de Autenticación (2FA)**:
+   - Investigar, habilitar y configurar 2FA en SSH y verificar su funcionamiento.
+
+### Conclusión
+El hardening del servidor SSH mejora la seguridad al mitigar riesgos como el acceso no autorizado, ataques de fuerza bruta y el uso de contraseñas débiles. Las configuraciones implementadas, como la autenticación por clave pública, el cambio de puerto y el uso de 2FA, refuerzan la protección del sistema, asegurando un acceso remoto más seguro.
+
 
