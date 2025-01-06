@@ -88,11 +88,11 @@ Asegurar el servidor SSH mediante configuraciones de hardening.
 
 ### Tareas a realizar:
 
-1. **Instalación del servidor SSH**:
-2. **Configuraciones de Hardening**:
-   - **Autenticación por clave pública**: Deshabilitar autenticación por contraseña.
+1. **Instalación del servidor SSH**
+3. **Configuraciones de Hardening**:
+   - **Autenticación SSH por clave pública**: Deshabilitar autenticación por contraseña.
    - **Cambio de puerto**: Cambiar el puerto SSH de 22 a uno no estándar.
-   - **Limitar IPs**: Restringir el acceso por IP (puede deshabilitarse después).
+   - **Limitar IPs**: Restringir el acceso por IP.
    - **Deshabilitar ROOT**: Evitar acceso SSH con el usuario ROOT.
    - **Limitar usuarios**: Restringir el acceso SSH a usuarios específicos.
    - **Deshabilitar contraseñas**: Deshabilitar inicio de sesión por contraseña.
@@ -101,10 +101,9 @@ Asegurar el servidor SSH mediante configuraciones de hardening.
    - **Limitar conexiones simultáneas**: Restringir conexiones SSH no autenticadas.
    - **Banner de advertencia**: Configurar un banner para los usuarios SSH.
    - **Timeout de sesión inactiva**: Configurar cierre de sesión después de inactividad.
-   - **Deshabilitar X11 forwarding**: Deshabilitar esta opción.
+   - **Deshabilitar X11 forwarding**: Evitar el uso de aplicaciones gráficas.
    - **Chroot (Bloquear usuarios)**: Limitar a los usuarios a sus directorios de inicio.
-
-3. **Doble Factor de Autenticación (2FA)**:
+4. **Doble Factor de Autenticación (2FA)**:
    - Investigar, habilitar y configurar 2FA en SSH y verificar su funcionamiento.
 
 ### Conclusión
