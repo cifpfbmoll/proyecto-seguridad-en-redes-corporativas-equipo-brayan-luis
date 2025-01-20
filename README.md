@@ -9,6 +9,7 @@
 2. [Sprint 2 - Copias de seguridad](#sprint-2---copias-de-seguridad)
 3. [Sprint 3 - Hardening Apache](#sprint-3---hardening-apache)
 4. [Sprint 4 -Hardening SSH](#sprint-4---hardening-ssh)
+5. [Sprint 5 - Escaneo de vulnerabiliades](#sprint-5---escaneo-de-vulnerabiliades)
 ---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
@@ -118,11 +119,11 @@ Análisis de vulnerabilidades en entornos empresariales mediante el uso de Nmap
 2. **Escaneo utilizando la técnica SYN Scan y reconoce los principales servicios en :**
    - MV de metasplotaible2
    - Servidor de Ubuntu
-3. **Escaneo de los principales puertos UDP abiertos en Mestasplotaible2 **
+3. **Escaneo de los principales puertos UDP abiertos en Mestasplotaible2**
 4. **escaneo lanzando el script vuln en :**
    - MV de metasplotaible2
    - Servidor de Ubuntu
-5. **Escaneo agresivo (opción -A) en: **
+5. **Escaneo agresivo (opción -A) en:**
    - MV de metasplotaible2
    - Servidor de Ubuntu
 6. **Escaneo de descubrimiento de equipos en la red de casa**
