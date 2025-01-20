@@ -110,3 +110,23 @@ Asegurar el servidor SSH mediante configuraciones de hardening.
 El hardening del servidor SSH mejora la seguridad al mitigar riesgos como el acceso no autorizado, ataques de fuerza bruta y el uso de contraseñas débiles. Las configuraciones implementadas, como la autenticación por clave pública, el cambio de puerto y el uso de 2FA, refuerzan la protección del sistema, asegurando un acceso remoto más seguro.
 
 
+## Sprint 5 - Escaneo de vulnerabiliades
+Análisis de vulnerabilidades en entornos empresariales mediante el uso de Nmap
+
+### Tareas a realizar:
+1. **Descargar MV metasplotaible2 e impórtala**
+2. **Escaneo utilizando la técnica SYN Scan y reconoce los principales servicios en :**
+   - MV de metasplotaible2
+   - Servidor de Ubuntu
+3. **Escaneo de los principales puertos UDP abiertos en Mestasplotaible2 **
+4. **escaneo lanzando el script vuln en :**
+   - MV de metasplotaible2
+   - Servidor de Ubuntu
+5. **Escaneo agresivo (opción -A) en: **
+   - MV de metasplotaible2
+   - Servidor de Ubuntu
+6. **Escaneo de descubrimiento de equipos en la red de casa**
+
+### Conclusión
+Los escaneos realizados con Nmap proporcionaron una visión exhaustiva del estado de seguridad del equipo como: identificar los principales puertos abiertos, servicios, posibles vulnerabilidade y indentificación de equipos de la re local.
+Estas actividades son fundamentales para detectar puntos débiles y reforzar la seguridad en entornos empresariales y domésticos.
