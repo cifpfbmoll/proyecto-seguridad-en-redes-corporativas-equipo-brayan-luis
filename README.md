@@ -10,6 +10,7 @@
 3. [Sprint 3 - Hardening Apache](#sprint-3---hardening-apache)
 4. [Sprint 4 -Hardening SSH](#sprint-4---hardening-ssh)
 5. [Sprint 5 - Escaneo de vulnerabiliades](#sprint-5---escaneo-de-vulnerabiliades)
+6. [Sprint 6 - Seguridad perimetral con pfSense](#sprint-6---seguridad-perimetral-con-pfsense)
 ---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
@@ -132,10 +133,9 @@ Análisis de vulnerabilidades en entornos empresariales mediante el uso de Nmap
 Los escaneos realizados con Nmap proporcionaron una visión exhaustiva del estado de seguridad del equipo como: identificar los principales puertos abiertos, servicios, posibles vulnerabilidade y indentificación de equipos de la re local.
 Estas actividades son fundamentales para detectar puntos débiles y reforzar la seguridad en entornos empresariales y domésticos.
 
-# Seguridad Perimetral con pfSense (Sprint 6)
 
-## Objetivo
-El objetivo de este sprint es poner en práctica los conocimientos adquiridos sobre seguridad perimetral y aplicar una arquitectura **Screened Subnet (DMZ)** para asegurar el sistema perimetralmente usando **pfSense**.
+## Sprint 6 - Seguridad perimetral con pfSense
+En este sprint, aprenderemos a instalar y configurar pfSense, y crearemos reglas específicas para cada interfaz de red. El objetivo es asegurar y gestionar el tráfico entre las diferentes redes, implementando medidas de seguridad para proteger el sistema y la infraestructura de la red.
 
 ## Requisitos
 - **pfSense 2.7.2** instalado.
@@ -147,33 +147,20 @@ El objetivo de este sprint es poner en práctica los conocimientos adquiridos so
 - **Equipo de empleados** en la red interna `10.0.2.0/24` (simulando un Windows).
 
 ## Comprobaciones iniciales
-Antes de configurar reglas, responde a las siguientes preguntas justificando la respuesta:
-1. ¿El servidor web y SSH es accesible desde el exterior?
-2. ¿El servidor tiene acceso a internet?
-3. ¿El equipo de los empleados tiene internet?
-4. ¿El servidor web es alcanzable desde el equipo de los empleados? ¿Y viceversa?
+- ¿El servidor web y SSH es accesible desde el exterior?
+- ¿El servidor tiene acceso a internet?
+- ¿El equipo de los empleados tiene internet?
+- ¿El servidor web es alcanzable desde el equipo de los empleados? ¿Y viceversa?
 
 ## Configuración de reglas en pfSense
-Configura las siguientes reglas de firewall en pfSense:
-
-1. **Permitir acceso a Internet para el servidor.**
-2. **Permitir acceso a Internet para los empleados.**
-3. **Hacer que el servidor web sea accesible solo por el puerto 443, redirigiendo el tráfico del 80 al 443.**
-4. **Permitir acceso SSH solo desde el puerto configurado en el Sprint de Hardening SSH.**
-5. **Bloquear tráfico directo entre el servidor y los empleados en ambas direcciones.**
-6. **Crear una regla de emergencia para bloquear tráfico en caso de ciberataque (dejarla deshabilitada y probarla).**
+1. **El servidor tenga acceso a internet**
+2. **Los empleados tengan acceso a internet.**
+3. **El servidor web sea accesible únicamente por el puerto 443 y redirija el tráfico del 80 al 443**
+4. **El servidor SSH sea accesible únicamente desde el puerto que elegiste en el Sprint de Hardening SSH**
+5. **Una regla que no permita el tráfico directo entre el servidor y los empleados, y al revés**
+6. **Crear una regla de emergencia para bloquear tráfico del servidor a la red WAN en caso de ciberataque.**
 7. **Bloquear una IP específica que haya realizado un ataque DoS al servidor web.**
+8. **Crear una regla personalizada**
 
-## Pruebas de Seguridad
-1. **Simular un ataque y activar la regla de bloqueo de tráfico.**
-2. **Deshabilitar la regla de bloqueo y comprobar la restauración del tráfico.**
-3. **Verificar que una IP atacante no puede acceder al servidor tras la aplicación de la regla.**
-
-## Importación de reglas
-Puedes importar las reglas configuradas en pfSense desde:
-`Diagnostics > Backup & Restore > Config Restore`
-
----
-
-_Proyecto de Seguridad Perimetral con pfSense - Sprint 6_
-
+### Conclusión
+Creamos varias reglas en las 3 interfaces de red para bloquear o permitir ciertas acciones, lo que nos ayuda a asegurar la segmentación de tráfico entre redes, proteger el servidor web y SSH, y establecer medidas de emergencia en caso de ciberataques. Esto mejora la seguridad perimetral y la respuesta ante incidentes.
