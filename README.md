@@ -135,7 +135,7 @@ Estas actividades son fundamentales para detectar puntos débiles y reforzar la 
 
 
 ## Sprint 6 - Seguridad perimetral con pfSense
-En este sprint, aprenderemos a instalar y configurar pfSense, y crearemos reglas específicas para cada interfaz de red. Asegurarndo y gestionando el tráfico entre las diferentes redes, implementando medidas de seguridad para proteger el sistema y la infraestructura de la red.
+En este sprint, aprenderemos a instalar y configurar pfSense, y crearemos reglas específicas para cada interfaz de red. Asegurando y gestionando el tráfico entre las diferentes redes, implementando medidas de seguridad para proteger el sistema y la infraestructura de la red.
 
 ## Requisitos
 - **pfSense 2.7.2** instalado.
