@@ -164,3 +164,28 @@ En este sprint, aprenderemos a instalar y configurar pfSense, y crearemos reglas
 
 ### Conclusión
 Creamos varias reglas en las 3 interfaces de red para bloquear o permitir ciertas acciones, lo que nos ayuda a asegurar la segmentación de tráfico entre redes, proteger el servidor web y SSH, y establecer medidas de emergencia en caso de ciberataques. Esto mejora la seguridad perimetral y la respuesta ante incidentes.
+
+
+## Sprint 7 - Seguridad Perimetral y VPN con pfSense
+
+El objetivo de este sprint es configurar el cortafuegos pfSense con IDS/IPS Suricata y un servidor VPN, permitiendo a los empleados conectarse de manera segura desde redes públicas.
+
+### Tareas Realizadas:
+
+#### 1. Instalación de IDS/IPS Suricata:
+- Instalación y configuración de Suricata en pfSense con las reglas de la comunidad **Snort**.
+
+#### 2. Prueba de Ataque DoS:
+- Se realizó un ataque DoS al servidor Web antes de habilitar Suricata.
+- Tras habilitar Suricata en modo **IPS**, se repitió el ataque y se verificó la detección y bloqueo en los logs.
+
+#### 3. Configuración del Servidor VPN:
+- Configuración de un servidor VPN en pfSense con las siguientes opciones:
+  - **OpenVPN** y **WireGuard** para permitir conexiones seguras.
+
+#### 4. Análisis de Tráfico con ntopng:
+- Instalación de **ntopng** en pfSense para monitorear el tráfico de red y detectar posibles amenazas.
+
+### Conclusión:
+Este sprint mejoró la seguridad perimetral mediante Suricata (IDS/IPS) y un servidor VPN, permitiendo acceso remoto seguro y analizando el tráfico para identificar amenazas.
+
