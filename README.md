@@ -11,6 +11,7 @@
 4. [Sprint 4 -Hardening SSH](#sprint-4---hardening-ssh)
 5. [Sprint 5 - Escaneo de vulnerabiliades](#sprint-5---escaneo-de-vulnerabiliades)
 6. [Sprint 6 - Seguridad perimetral con pfSense](#sprint-6---seguridad-perimetral-con-pfsense)
+7. [Sprint 7 - Seguridad Perimetral y VPN con pfSense](#sprint-7---seguridad-perimetral-y-vpn-con-pfsense)
 ---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
