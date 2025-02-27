@@ -12,6 +12,7 @@
 5. [Sprint 5 - Escaneo de vulnerabiliades](#sprint-5---escaneo-de-vulnerabiliades)
 6. [Sprint 6 - Seguridad perimetral con pfSense](#sprint-6---seguridad-perimetral-con-pfsense)
 7. [Sprint 7 - Seguridad Perimetral y VPN con pfSense](#sprint-7---seguridad-perimetral-y-vpn-con-pfsense)
+8. [Sprint 8 - Alta disponibilidad](#sprint-8---alta-disponibilidad)
 ---
 ## Sprint 1 - Hardening de Ubuntu
 Este documento resume las configuraciones realizadas para asegurar un servidor Ubuntu 22.04 LTS, aplicando medidas de seguridad recomendadas por CIS (Center for Internet Security).
@@ -190,3 +191,44 @@ El objetivo de este sprint es configurar el cortafuegos pfSense con IDS/IPS Suri
 ### Conclusión:
 Este sprint mejoró la seguridad perimetral mediante Suricata (IDS/IPS) y un servidor VPN, permitiendo acceso remoto seguro y analizando el tráfico para identificar amenazas.
 
+
+## Sprint 8 - Alta disponibilidad
+
+En este sprint se implementa un sistema de alta disponibilidad con Apache configurado como proxy inverso y balanceador de carga. Además, se explora la configuración de un proxy caché con pfSense.
+
+### **US12 - Proxy Inverso**
+- Se configuró Apache como proxy inverso para redirigir peticiones a un servidor final.
+- Se utilizó la aplicación `http.server` de Python en Ubuntu como servidor final.
+- Se creó una página HTML con el texto: **proxy inverso + [Nombre y Apellido]**.
+- Se habilitaron los módulos necesarios:
+  ```bash
+  sudo a2enmod proxy
+  sudo a2enmod proxy_http
+  ```
+- Se comprobó el funcionamiento del proxy inverso desde un equipo en la WAN.
+
+### **US13 - Apache Balancer**
+- Se configuró Apache como balanceador de carga con tres miembros (*workers*).
+- Cada *worker* utilizó `http.server` en Ubuntu y sirvió una página HTML con el texto: **miembro balanceador nº __ + [Nombre y Apellido]**.
+- Se definió un balanceador en Apache con el apellido del equipo.
+- Se implementó el método de balanceo `byrequests`, asignando el triple de carga al primer nodo.
+- Se configuró un tercer nodo como **hot-standby**.
+- Se activó el módulo de administración `balancer-manager` y se comentó su información.
+- Se habilitaron los módulos necesarios:
+  ```bash
+  sudo a2enmod proxy
+  sudo a2enmod proxy_http
+  sudo a2enmod proxy_balancer
+  sudo a2enmod lbmethod_byrequests
+  sudo a2enmod slotmem_shm
+  sudo a2enmod proxy_connect
+  ```
+- Se verificó el correcto funcionamiento del balanceador y la activación del tercer nodo *hot-standby*.
+
+### **US14 - Proxy caché con pfSense (opcional)**
+- Se realizó una configuración básica de proxy caché en pfSense para que los equipos de la LAN pasen por él.
+- Se verificó que el tráfico pasaba correctamente por el proxy.
+- Se investigaron las configuraciones principales y su utilidad.
+
+### **Conclusión Sprint 8**
+Se implementó un sistema de alta disponibilidad con Apache, configurando un proxy inverso y un balanceador de carga. Se probaron las configuraciones en distintos escenarios para verificar su funcionamiento y se exploró la configuración de un proxy caché con pfSense para optimizar el tráfico de la LAN.
