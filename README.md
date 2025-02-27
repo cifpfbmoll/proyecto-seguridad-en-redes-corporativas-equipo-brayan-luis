@@ -194,7 +194,7 @@ Este sprint mejoró la seguridad perimetral mediante Suricata (IDS/IPS) y un ser
 
 ## Sprint 8 - Alta disponibilidad
 
-En este sprint se implementa un sistema de alta disponibilidad con Apache configurado como proxy inverso y balanceador de carga. Además, se explora la configuración de un proxy caché con pfSense.
+Se implementa un sistema de alta disponibilidad con Apache configurado como proxy inverso y balanceador de carga. Además, se explora la configuración de un proxy caché con pfSense.
 
 ### **US12 - Proxy Inverso**
 - Se configuró Apache como proxy inverso para redirigir peticiones a un servidor final.
